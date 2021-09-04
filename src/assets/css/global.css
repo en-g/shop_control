@@ -53,3 +53,15 @@ body .el-table colgroup.gutter {
 .el-cascader-panel .el-cascader-node__postfix {
     top: 10px;
 }
+
+.el-steps {
+    margin: 15px 0;
+}
+
+.el-step__title {
+    font-size: 13px;
+}
+
+.ql-editor {
+    min-height: 300px;
+}
