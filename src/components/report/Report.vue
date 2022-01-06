@@ -66,7 +66,7 @@
       }
       //准备数据和配置项
       const result = _.merge(this.options, res.data)
-      console.log(result);
+
       //展示数据
       myChart.setOption(result)
     },

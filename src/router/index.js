@@ -1,6 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Login from "../components/Login"
+const Login = () => import(/* webpackChunkName: "login_home_welcome" */'../components/Login')
+const Home = () => import(/* webpackChunkName: "login_home_welcome" */'../components/Home')
+const Welcome = () => import(/* webpackChunkName: "login_home_welcome" */'../components/Welcome')
+
+const Users = () => import(/* webpackChunkName: "users_rights_roles" */'../components/user/Users')
+const Rights = () => import(/* webpackChunkName: "users_rights_roles" */'../components/power/Rights')
+const Roles = () => import(/* webpackChunkName: "users_rights_roles" */'../components/power/Roles')
+
+const Cate = () => import(/* webpackChunkName: "cate_params" */'../components/goods/Cate')
+const Params = () => import(/* webpackChunkName: "cate_params" */'../components/goods/Params')
+
+const Goods = () => import(/* webpackChunkName: "goods_add" */'../components/goods/List')
+const Add = () => import(/* webpackChunkName: "goods_add" */'../components/goods/Add')
+
+const Order = () => import(/* webpackChunkName: "order_report" */'../components/order/Order')
+const Report = () => import(/* webpackChunkName: "order_report" */'../components/report/Report')
+
+/*import Login from "../components/Login"
 import Home from "../components/Home"
 import Welcome from "../components/Welcome"
 import Users from "../components/user/Users"
@@ -11,7 +28,7 @@ import Params from "../components/goods/Params"
 import Goods from "../components/goods/List"
 import Add from "../components/goods/Add"
 import Order from "../components/order/Order"
-import Report from "../components/report/Report"
+import Report from "../components/report/Report"*/
 
 Vue.use(VueRouter)
 
